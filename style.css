@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(to right top,) #001e4d;
+    font-family: Arial;
+    margin: 0;
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+    font-size: 16px;
+}
+.qa-box{
+    background-color: aqua;
+    width: 500px;
+    padding: 20px;
+    min-height: 100px;
+    box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+    border-radius: 15px;
+
+}
+.qa-header{
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+    font-size: 20px;
+}
+.qa-set{
+    display: block;
+}
+.qa-set.active{
+    display: block;
+}
+.qa-set h4{
+    margin: 0 0 15px;
+    font-size: 20px;
+}
+.qa-ans-row{
+    position: relative;
+    margin-bottom: 10px;
+}
+.qa-ans-row input{
+   opacity: 0;
+   position: absolute;
+   left: 0; 
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 1;
+   cursor: pointer;
+
+}
+.qa-ans-row span{
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+}
+.qa-ans-row:hover span{
+    background-color: lightpink;
+}
+.qa-ans-row input:checked + span{
+    background-color: darkmagenta;
+}
+.qa-ans-row input[valid]:checked + span{
+    background-color: purple;
+    color: pink;
+}
+.qa-footer{
+    padding: 10px 0 0;
+}
