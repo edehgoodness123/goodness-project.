@@ -1,4 +1,4 @@
-body{
+/* body{
     background: linear-gradient(to right top,) #001e4d;
     font-family: Arial;
     margin: 0;
@@ -72,4 +72,14 @@ body{
 }
 .qa-footer{
     padding: 10px 0 0;
+} */
+.patients{
+    background-color: aqua; 
+    width: 20%;
+    padding: 20px;
+    font-size: larger;
+    height: 300px;
+    margin: 50px;
+    shape-margin: 10px; 
 }
+    
